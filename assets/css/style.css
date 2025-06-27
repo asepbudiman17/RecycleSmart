@@ -1,0 +1,117 @@
+/* ====== FONT MODERN ====== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', 'Nunito', Arial, sans-serif !important;
+}
+
+/* ====== BACKGROUND ====== */
+body {
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%) !important;
+  min-height: 100vh;
+}
+
+/* ====== SIDEBAR MODERN ====== */
+.sidebar {
+  background: rgba(30, 41, 59, 0.85) !important;
+  backdrop-filter: blur(8px);
+  border-radius: 24px 0 0 24px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  margin: 16px 0 16px 16px;
+  padding-top: 16px;
+}
+.sidebar .sidebar-brand {
+  font-weight: 700;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+.sidebar .nav-item .nav-link {
+  border-radius: 12px;
+  margin: 4px 8px;
+  transition: background 0.2s, color 0.2s;
+}
+.sidebar .nav-item .nav-link:hover, .sidebar .nav-item.active .nav-link {
+  background: linear-gradient(90deg, #4e73df 0%, #1cc88a 100%);
+  color: #fff !important;
+  box-shadow: 0 2px 8px rgba(78,115,223,0.08);
+}
+.sidebar .nav-item .nav-link i {
+  font-size: 1.1rem;
+}
+
+/* ====== TOPBAR MODERN ====== */
+.topbar {
+  background: rgba(255,255,255,0.85) !important;
+  backdrop-filter: blur(6px);
+  border-radius: 0 0 24px 24px;
+  box-shadow: 0 4px 24px 0 rgba(31, 38, 135, 0.07);
+}
+
+/* ====== CARD GLASSMORPHISM ====== */
+.card, .content-card, .table, .form-control, .modal-content {
+  background: rgba(255,255,255,0.7) !important;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.10);
+  border-radius: 18px !important;
+  border: 1px solid rgba(255,255,255,0.18) !important;
+}
+
+/* ====== BUTTON MODERN ====== */
+.btn, .btn-primary, .btn-success, .btn-info, .btn-warning, .btn-danger {
+  border-radius: 12px !important;
+  font-weight: 600;
+  transition: background 0.2s, box-shadow 0.2s, color 0.2s;
+  box-shadow: 0 2px 8px rgba(78,115,223,0.08);
+}
+.btn-primary {
+  background: linear-gradient(90deg, #4e73df 0%, #1cc88a 100%) !important;
+  border: none;
+}
+.btn-primary:hover {
+  background: linear-gradient(90deg, #1cc88a 0%, #4e73df 100%) !important;
+  color: #fff;
+}
+
+/* ====== TABLE MODERN ====== */
+.table {
+  border-radius: 16px !important;
+  overflow: hidden;
+  background: rgba(255,255,255,0.8) !important;
+}
+.table thead {
+  background: linear-gradient(90deg, #4e73df 0%, #1cc88a 100%) !important;
+  color: #fff;
+}
+.table tbody tr:hover {
+  background: #e0eafc !important;
+  transition: background 0.2s;
+}
+
+/* ====== PROFILE IMAGE ====== */
+.img-profile {
+  border: 3px solid #4e73df;
+  box-shadow: 0 2px 8px rgba(78,115,223,0.12);
+}
+
+/* ====== ANIMASI HOVER ====== */
+.card, .btn, .sidebar .nav-link, .table tbody tr {
+  transition: all 0.2s cubic-bezier(.4,2,.6,1);
+}
+
+/* ====== FOOTER ====== */
+footer.sticky-footer {
+  background: rgba(255,255,255,0.7) !important;
+  border-radius: 24px 24px 0 0;
+  box-shadow: 0 -4px 24px 0 rgba(31, 38, 135, 0.07);
+}
+footer .copyright {
+  color: #4e73df;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .sidebar {
+    border-radius: 0 0 24px 24px;
+    margin: 0;
+  }
+} 

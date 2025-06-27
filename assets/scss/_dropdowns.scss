@@ -1,0 +1,76 @@
+// Custom Dropdown Styling
+
+.dropdown {
+  .dropdown-menu {
+    font-size: $dropdown-font-size;
+    .dropdown-header {
+      @extend .text-uppercase;
+      font-weight: 800;
+      font-size: 0.65rem;
+      color: $gray-500;
+    }
+  }
+}
+
+// Utility class to hide arrow from dropdown
+
+.dropdown.no-arrow {
+  .dropdown-toggle::after {
+    display: none;
+  }
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card-glass {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.18);
+    padding: 40px 32px;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+.input-group input {
+    width: 100%;
+    padding: 12px 40px 12px 16px;
+    border-radius: 12px;
+    border: none;
+    background: rgba(255,255,255,0.7);
+    font-size: 16px;
+}
+.input-group .icon {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #43e97b;
+    font-size: 18px;
+}
+.btn-glass {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    transition: background 0.3s;
+}
+.btn-glass:hover {
+    background: linear-gradient(90deg, #38f9d7 0%, #43e97b 100%);
+}
